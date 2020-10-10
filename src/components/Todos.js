@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 
-
 class Todos extends Component {
     render() {
         return (
-            <div>
-                <h1>Todos</h1>
-            </div>
+            <h1>This is one Todo Component</h1>
         );
     }
 }

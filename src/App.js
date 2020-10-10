@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import Todos from './components/Todos';
-
 import './App.css';
 
 
 class App extends Component {
-
   state = {
     todos: [
       {
         id: 1,
-        title: 'Take out the trash',
-        completed: false
+        title: 'Take out trash',
+        completed: true
       },
       {
         id: 2,
@@ -20,16 +18,20 @@ class App extends Component {
       },
       {
         id: 3,
-        title: 'Meeting with boss',
+        title: 'Meeting with Boss',
+        completed: true
+      },
+      {
+        id: 4,
+        title: 'Chatting for a while with Developers Community on Discord',
         completed: false
       }
     ]
-  }
-
+  };
   render() {
     return (
       <div className="App">
-        <Todos todos={this.state.todos} />
+        <Todos />
       </div>
     );
   }
